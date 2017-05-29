@@ -17,7 +17,7 @@ function showResults(data){
 		return;
 	}
 	//最初の8個のデータのみ利用
-	var max_num = 14;
+	var max_num = 8;
 	if (data.photos.photo.length <max_num) max_num = data.photos.photo.length;//[max_num]個より検索結果が少ない場合の処理
 	for (var i=0; i<max_num; i++){
 		var photo = data.photos.photo[i];
