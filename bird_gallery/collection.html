@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="utf-8" />
+    <title>Collection</title>
+    <script type="text/javascript" src="collection.js"></script>
+</head>
+
+<body onload="imageSearch()">
+<!-- ボタンの配置 -->
+<h1 id="searchText">waseda</h1>
+<br/>
+<h2>画像検索結果</h2>
+<!-- 画像検索結果を8個表示するための領域をテーブルにより構築 -->
+<table border="4" bordercolor="#ffffff" bgcolor="#cccccc">
+ <tr  bgcolor="#ffffff"> <!-- onclickで各領域がクリックされた時にsaveResultを実行するように設定 -->
+ 	<td id="r0" onclick="saveResult(0)" width="100" height="100"></td>
+ 	<td id="r1" onclick="saveResult(1)" width="100"></td><td id="r2" onclick="saveResult(2)" width="100"></td>
+ 	<td id="r3" onclick="saveResult(3)" width="100"></td><td id="r4" onclick="saveResult(4)" width="100"></td>
+ 	<td id="r5" onclick="saveResult(5)" width="100"></td><td id="r6" onclick="saveResult(6)" width="100"></td>
+ 	<td id="r7" onclick="saveResult(7)" width="100"></td>
+ </tr>
+</table>
+<table border="4" bordercolor="#ffffff" bgcolor="#cccccc">
+ <!-- <tr align="top" >
+    <td id="s" width="800" height="100"></td>
+ </tr> -->
+</table>
+</body>
+</html>
