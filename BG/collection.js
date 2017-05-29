@@ -1,7 +1,7 @@
 // Flicker Photo Searchの実行
 function imageSearch(){
     // ユーザ入力のクエリを取得
-	var query = document.getElementById("searchText").textContent;
+	var query = "mountain bird";//document.getElementById("searchText").textContent;
 	// FlickerPhotoSearchを実行するためのスクリプトを生成
 	var new_script = document.createElement('script');
 	new_script.src = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=8d3f83ee4cfc93cd7c5972ce66ade6ed&format=json&jsoncallback=showResults&safe_search=1&sort=relevance&tags="+query;
@@ -42,5 +42,5 @@ function saveResult(flg){
 
 function onClickDo(node){
   var parent_node=document.getElementById("s");
-	// Do something...
+	// 画像をタップした時のコードを書く
 }

@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+html {
+  width: 100%;
+}
+
+body { /*2016.08.06追記*/
+  position: relative;/*ポジションーはレイヤー*/ /*relativeー地についた状態（ベース）*/
+  margin: 0 auto;/*今は上下・左右*/
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;/*画面からはみ出した場合切り取る*/
+  overflow-scrolling: touch;/*スマフォ限定のオプション*/
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
+  -os-overflow-scrolling: touch;
+  font-weight: normal;
+  font-size: 100%;/*16pxで一文字*/
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  /*順番で適応*/
+  color: #191919 ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  /*デザインをきれいにするもの*/
+}
+
+
+/* nav */
+body {
+  font-family: sans-serif;
+}
+nav {
+  background-color: rgba(255, 255, 255, 0.53);
+  color: white;
+}
+nav ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin: 0;
+  padding: 6px;
+  list-style-type: none;
+}
+nav a {
+  font-size: 1.2rem;
+  display: block;
+  border-radius: 4px;
+  padding: 12px 24px;
+  color: #484848;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: rgba(176, 226, 77, 0.77);
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo{
+  padding: 0px;
+}
+.logo img{
+  height: 49px;
+}
+
+
+
+/* section.about */
+
+/* bodyの背景 */
+body{
+  background-image: url(images/back.jpg)
+}
+
+.main{
+  margin: 10%;
+  text-align: center;
+}
+
+.main h1{
+  font-size: 3rem;
+  color: #575353;
+}
+
+.about a{
+  font-size: 1.2rem;
+}
+
